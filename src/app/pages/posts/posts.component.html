@@ -1,0 +1,14 @@
+<h1 class="text-center display-1  " >Posts works!</h1>
+<hr>
+<div class="container-sm">
+<hr>
+ <div class="list-group " *ngFor="let mensaje of mensajes | async">
+    <a href="#" class="list-group-item list-group-item-action active">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{mensaje.title}}</h5>
+      </div>
+      <p class="mb-1">{{ mensaje.body}}</p>
+    </a>
+    <hr>
+
+</div>
